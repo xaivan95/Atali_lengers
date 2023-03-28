@@ -1,0 +1,26 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:view="clr-namespace:Atali_len.View"
+                    xmlns:viewControl="clr-namespace:Atali_len.Control"
+                    >
+
+    <DataTemplate DataType="{x:Type viewControl:HomeVM}">
+        <view:Home/>
+    </DataTemplate>
+    
+    <DataTemplate DataType="{x:Type viewControl:ClientVM}">
+        <view:Client/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type viewControl:MerkyVM}">
+        <view:Merky/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type viewControl:WorkVM}">
+        <view:Work/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type viewControl:ZakazVM}">
+        <view:Zakaz/>
+    </DataTemplate>
+</ResourceDictionary>

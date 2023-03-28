@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\User\source\repos\Atali_len\Atali_len\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\AddClient.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AddMerki.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AddWork.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AddZakaz.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Client.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Home.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Merky.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Work.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Zakaz.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Styles\Button.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Image.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Page.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Text.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddClient.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddMerki.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddWork.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddZakaz.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Client.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DataTemplate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Home.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Merky.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Work.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Zakaz.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

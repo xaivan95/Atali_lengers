@@ -1,0 +1,146 @@
+﻿<Window x:Class="Atali_len.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Atali_len.Control" xmlns:Menu="clr-namespace:Atali_len.View"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="700"
+        Width="900"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent">
+    <Window.DataContext>
+        <local:MainWindowViewControl/>
+    </Window.DataContext>
+
+    <Grid>
+
+        <!--// Window Border //-->
+
+        <Border Background="White"
+                CornerRadius="20" />
+
+        <Grid>
+
+            <!--// Base Grid //-->
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="228" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!--// Navigation Panel //-->
+
+            <Grid HorizontalAlignment="Left"
+                  Width="228">
+
+                <Border Background="#272B2F"
+                        CornerRadius="20,0,0,20" >
+
+                </Border>
+                <Image Margin="20" Width="220" Height="150" Source="/Assets/финал2.png" Stretch="Fill" VerticalAlignment="Top"></Image>
+                <StackPanel Height="400"
+                            Width="228">
+
+                    <!--// Home //-->
+
+                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                              Command="{Binding ClientCommand}"
+                              IsChecked="True">
+
+                        <Grid>
+
+                            <Image 
+                                   Style="{StaticResource Image_Style}" />
+
+                            <TextBlock Text="Клиенты"
+                                       Style="{StaticResource Text_Style}" />
+
+                        </Grid>
+
+                    </Menu:Btn>
+                    <!--// Home //-->
+                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                              Command="{Binding MerkyCommand}">
+
+                        <Grid>
+
+                            <Image 
+                                   Style="{StaticResource Image_Style}" />
+
+                            <TextBlock Text="Мерки"
+                                       Style="{StaticResource Text_Style}" />
+
+                        </Grid>
+
+                    </Menu:Btn>
+                    
+                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                              Command="{Binding ZakazCommand}"
+                              IsChecked="True">
+
+                        <Grid>
+
+                            <Image 
+                                   Style="{StaticResource Image_Style}" />
+
+                            <TextBlock Text="Заказы"
+                                       Style="{StaticResource Text_Style}" />
+
+                        </Grid>
+
+                    </Menu:Btn>
+                    <!--// Customer //-->
+
+                  
+
+                    <!--// Products //-->
+
+
+
+                    <!--// Settings //-->
+
+                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                              Command="{Binding WorkCommand}">
+
+                        <Grid>
+
+                            <Image 
+                                   Style="{StaticResource Image_Style}" />
+
+                            <TextBlock Text="Файлы"
+                                       Style="{StaticResource Text_Style}" />
+
+                        </Grid>
+
+                    </Menu:Btn>
+
+                </StackPanel>
+
+            </Grid>
+            <Image Margin="0,404,40,10" Source="/Assets/финал2.png" Stretch="Fill" Grid.ColumnSpan="2"/>
+            <Grid Grid.Column="1" Background="White">
+
+                <ContentControl x:Name="Pages"
+                                Content="{Binding CurrentView}" />
+
+            </Grid>
+
+        </Grid>
+
+        <Button x:Name="CloseApp"
+                Style="{StaticResource ExitApp}" Click="CloseApp_Click"
+                     
+                 />
+
+        <Button x:Name="MaxBtn"
+                Style="{StaticResource maxBtn}"
+                Click="MaxBtn_Click" />
+
+
+    </Grid>
+
+</Window>

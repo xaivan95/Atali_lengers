@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\2023-03-27_22-07-41.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\max_def.png" />
+    <None Remove="Assets\max_mo.png" />
+    <None Remove="Assets\shutdown_def.png" />
+    <None Remove="Assets\shutdown_mo.png" />
+    <None Remove="Assets\финал.jpg" />
+    <None Remove="Assets\финал2.jpg" />
+    <None Remove="Assets\финал2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\2023-03-27_22-07-41.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\pdf\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.8.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\max_def.png" />
+    <Resource Include="Assets\max_mo.png" />
+    <Resource Include="Assets\shutdown_def.png" />
+    <Resource Include="Assets\shutdown_mo.png" />
+    <Resource Include="Assets\финал.jpg" />
+    <Resource Include="Assets\финал2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data\ataliDB.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\image\1\1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

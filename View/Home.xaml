@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="Atali_len.View.Home"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Atali_len.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Image Source="/Assets/финал.jpg" Stretch="None" VerticalAlignment="Center"></Image>
+        <Grid  HorizontalAlignment="Center">
+            <TextBlock  FontSize="35" Text="Добро пожаловать" Foreground="Blue" TextAlignment="Center" VerticalAlignment="Top" Margin="40"/>
+            <TextBlock  FontSize="35" Text="в систему управления заказами" VerticalAlignment="Bottom"  TextAlignment="Center" Margin="40" Foreground="Blue"/>
+        </Grid>
+    </Grid>
+</UserControl>
